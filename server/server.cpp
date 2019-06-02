@@ -24,6 +24,10 @@ int server::s_accept(){
 	return accept(m_fd, (SA *)&clie, &cli_len);
 }
 
+const int server::getfd(){
+	return m_fd;
+}
+
 void server::doing(int fd, char *buf, int buf_len){
 	while(1){
 		char ip[128] = {'\0'};

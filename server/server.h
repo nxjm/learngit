@@ -10,6 +10,7 @@ public:
 	void s_bind();
 	int s_accept();
 	void doing(int fd, char *buf, int buf_len);
+	const int getfd();
 private:
 	int m_fd;
 	int m_port;
